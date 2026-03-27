@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -19,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Welfare Fraud Detection System",
-  description: "Welfare Fraud Detection System",
+  title: "WelfareGuard | Fraud Detection System",
+  description: "AI-powered welfare detection system ensureing benefits reach genuine citizens.",
 };
 
 export default function RootLayout({
@@ -29,9 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased container mx-auto`}
+        className={`${inter.variable} font-sans antialiased bg-background text-foreground`}
       >
         {children}
       </body>
