@@ -62,7 +62,7 @@
   --popover-foreground: oklch(0.15 0 0);
 
   /* 🔵 Primary (Blue) */
-  --primary: oklch(0.55 0.2 250); /* Blue */
+  --primary: oklch(0.55 0.2 250);
   --primary-foreground: oklch(0.98 0 0);
 
   /* Secondary */
@@ -87,10 +87,10 @@
   --ring: oklch(0.55 0.2 250);
 
   /* Charts (risk colors) */
-  --chart-1: oklch(0.7 0.2 140);  /* green */
-  --chart-2: oklch(0.75 0.2 80);  /* yellow */
-  --chart-3: oklch(0.6 0.22 27);  /* red */
-  --chart-4: oklch(0.55 0.2 250); /* blue */
+  --chart-1: oklch(0.7 0.2 140);
+  --chart-2: oklch(0.75 0.2 80);
+  --chart-3: oklch(0.6 0.22 27);
+  --chart-4: oklch(0.55 0.2 250);
   --chart-5: oklch(0.5 0.15 260);
 
   /* Sidebar */
@@ -114,7 +114,6 @@
   --popover: oklch(0.18 0 0);
   --popover-foreground: oklch(0.98 0 0);
 
-  /* 🔵 Primary */
   --primary: oklch(0.65 0.22 250);
   --primary-foreground: oklch(0.1 0 0);
 
@@ -134,7 +133,6 @@
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.65 0.22 250);
 
-  /* Charts */
   --chart-1: oklch(0.7 0.2 140);
   --chart-2: oklch(0.75 0.2 80);
   --chart-3: oklch(0.65 0.22 27);
@@ -159,4 +157,119 @@
       font-family: var(--font-inter);
       @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(to right, oklch(0.9 0 0 / 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(0.9 0 0 / 0.3) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .dark .bg-grid-pattern {
+    background-image:
+      linear-gradient(to right, oklch(1 0 0 / 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(1 0 0 / 0.04) 1px, transparent 1px);
+  }
+
+  /* Subtle noise texture overlay */
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+
+  /* Glassmorphism card effect */
+  .glass-card {
+    @apply bg-background/80 backdrop-blur-xl border border-border/50 shadow-lg;
+  }
+
+  /* Animated gradient text */
+  .gradient-text-animated {
+    background: linear-gradient(
+      90deg,
+      var(--primary),
+      var(--chart-4),
+      var(--primary)
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  /* Shimmer loading effect */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      oklch(0.95 0 0 / 0.5) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* Pulse ring animation */
+  .pulse-ring {
+    @apply relative;
+  }
+
+  .pulse-ring::before {
+    content: '';
+    @apply absolute inset-0 rounded-full animate-ping opacity-75;
+  }
+
+  /* Smooth scroll behavior */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-muted/30 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full hover:bg-muted-foreground/50 transition-colors;
+  }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
 }
