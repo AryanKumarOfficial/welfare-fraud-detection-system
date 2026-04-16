@@ -1,0 +1,801 @@
+user_id,caste,father_caste,state,district,avg_caste_population_per,officer_approvals_per_day
+1,General,General,Rajasthan,Jaipur,0.28,7
+2,SC,SC,Rajasthan,Jodhpur,0.3,11
+3,ST,ST,West Bengal,Darjeeling,0.19,11
+4,General,General,Karnataka,Mysuru,0.27,6
+5,OBC,OBC,Chhattisgarh,Durg,0.18,14
+6,ST,ST,Maharashtra,Nagpur,0.16,11
+7,ST,ST,Odisha,Rourkela,0.37,6
+8,OBC,OBC,Manipur,Imphal East,0.14,7
+9,General,General,Rajasthan,Jaipur,0.28,14
+10,General,General,Assam,Dibrugarh,0.13,8
+11,General,General,Madhya Pradesh,Gwalior,0.18,6
+12,OBC,OBC,Uttarakhand,Haridwar,0.26,6
+13,General,General,Odisha,Rourkela,0.37,6
+14,OBC,OBC,Haryana,Faridabad,0.06,9
+15,ST,ST,Bihar,Patna,0.26,10
+16,General,General,Madhya Pradesh,Indore,0.21,10
+17,OBC,OBC,Punjab,Jalandhar,0.28,6
+18,General,General,Jharkhand,Dhanbad,0.12,12
+19,ST,ST,Uttarakhand,Haridwar,0.26,8
+20,ST,ST,Nagaland,Kohima,0.14,12
+21,General,General,Madhya Pradesh,Bhopal,0.29,10
+22,General,General,Jharkhand,Jamshedpur,0.28,13
+23,SC,SC,Nagaland,Dimapur,0.27,10
+24,General,General,Mizoram,Lunglei,0.33,10
+25,SC,SC,Uttarakhand,Dehradun,0.15,12
+26,OBC,OBC,Goa,Ponda,0.19,8
+27,ST,ST,West Bengal,Howrah,0.1,8
+28,General,General,Madhya Pradesh,Indore,0.21,8
+29,OBC,OBC,Mizoram,Lunglei,0.33,11
+30,General,General,Kerala,Kozhikode,0.14,10
+31,General,General,Himachal Pradesh,Kangra,0.11,6
+32,OBC,OBC,Manipur,Imphal West,0.38,9
+33,SC,SC,Odisha,Bhubaneswar,0.2,6
+34,ST,ST,Tripura,Gomati,0.33,7
+35,SC,SC,West Bengal,Kolkata,0.14,10
+36,SC,SC,Telangana,Hyderabad,0.3,9
+37,ST,ST,Madhya Pradesh,Indore,0.21,6
+38,OBC,OBC,Manipur,Churachandpur,0.05,14
+39,ST,ST,Gujarat,Vadodara,0.27,8
+40,OBC,OBC,Rajasthan,Jaipur,0.28,11
+41,SC,SC,Rajasthan,Jaipur,0.28,11
+42,ST,ST,Manipur,Imphal East,0.14,10
+43,SC,SC,Nagaland,Dimapur,0.27,14
+44,General,General,Uttarakhand,Haridwar,0.26,14
+45,ST,ST,Tamil Nadu,Coimbatore,0.27,6
+46,ST,ST,Uttarakhand,Haridwar,0.26,9
+47,General,General,Goa,Ponda,0.19,8
+48,OBC,OBC,Jharkhand,Dhanbad,0.12,10
+49,General,General,Madhya Pradesh,Gwalior,0.18,11
+50,General,General,Jharkhand,Jamshedpur,0.28,8
+51,OBC,OBC,Haryana,Faridabad,0.06,9
+52,SC,SC,Maharashtra,Mumbai,0.16,6
+53,OBC,OBC,Haryana,Gurugram,0.08,10
+54,OBC,OBC,Bihar,Gaya,0.14,14
+55,ST,ST,Goa,South Goa,0.1,7
+56,General,General,Manipur,Imphal West,0.38,14
+57,SC,SC,Andhra Pradesh,Guntur,0.32,11
+58,General,General,Punjab,Ludhiana,0.07,9
+59,OBC,OBC,West Bengal,Kolkata,0.14,8
+60,SC,OBC,Kerala,Kozhikode,0.14,17
+61,General,SC,Jharkhand,Jamshedpur,0.28,25
+62,OBC,OBC,Rajasthan,Udaipur,0.4,12
+63,SC,SC,Punjab,Ludhiana,0.07,9
+64,General,General,Andhra Pradesh,Guntur,0.32,10
+65,OBC,OBC,Goa,North Goa,0.07,12
+66,General,General,Goa,South Goa,0.1,6
+67,ST,ST,Karnataka,Mysuru,0.27,9
+68,SC,SC,Karnataka,Hubballi-Dharwad,0.29,12
+69,OBC,OBC,Rajasthan,Jodhpur,0.3,13
+70,General,General,Gujarat,Vadodara,0.27,11
+71,OBC,OBC,Madhya Pradesh,Gwalior,0.18,6
+72,General,ST,Uttar Pradesh,Kanpur,0.36,21
+73,OBC,OBC,Assam,Dibrugarh,0.13,12
+74,OBC,OBC,Madhya Pradesh,Bhopal,0.29,9
+75,SC,SC,Arunachal Pradesh,Lower Subansiri,0.21,9
+76,OBC,OBC,Uttar Pradesh,Kanpur,0.36,9
+77,SC,SC,Bihar,Gaya,0.14,13
+78,OBC,OBC,Haryana,Faridabad,0.06,14
+79,General,General,Arunachal Pradesh,Tawang,0.06,13
+80,OBC,OBC,Gujarat,Ahmedabad,0.06,9
+81,General,General,Telangana,Warangal,0.07,13
+82,OBC,OBC,Uttarakhand,Haridwar,0.26,7
+83,General,General,Odisha,Cuttack,0.07,8
+84,SC,SC,Uttar Pradesh,Lucknow,0.38,14
+85,General,General,Uttar Pradesh,Lucknow,0.38,6
+86,General,SC,Kerala,Thiruvananthapuram,0.19,27
+87,General,General,Kerala,Kozhikode,0.14,12
+88,OBC,OBC,Himachal Pradesh,Kullu,0.18,7
+89,OBC,OBC,Bihar,Gaya,0.14,9
+90,SC,SC,Tripura,Sepahijala,0.28,9
+91,General,General,Jharkhand,Ranchi,0.19,13
+92,General,General,Punjab,Amritsar,0.07,14
+93,General,General,Bihar,Gaya,0.14,9
+94,SC,SC,Maharashtra,Mumbai,0.16,9
+95,OBC,OBC,Gujarat,Vadodara,0.27,10
+96,General,General,Tamil Nadu,Chennai,0.06,14
+97,OBC,OBC,Himachal Pradesh,Kullu,0.18,14
+98,OBC,OBC,Jharkhand,Jamshedpur,0.28,6
+99,General,General,Himachal Pradesh,Kullu,0.18,9
+100,OBC,OBC,Nagaland,Mokokchung,0.07,13
+101,General,General,Telangana,Hyderabad,0.3,34
+102,General,General,Nagaland,Dimapur,0.27,8
+103,OBC,OBC,Meghalaya,Ri Bhoi,0.15,14
+104,ST,ST,Assam,Dibrugarh,0.13,8
+105,OBC,OBC,Tamil Nadu,Coimbatore,0.27,8
+106,General,General,Himachal Pradesh,Kullu,0.18,7
+107,OBC,OBC,Odisha,Cuttack,0.07,12
+108,SC,SC,Nagaland,Dimapur,0.27,9
+109,ST,ST,Maharashtra,Pune,0.18,14
+110,SC,SC,Madhya Pradesh,Indore,0.21,12
+111,General,General,Arunachal Pradesh,Lower Subansiri,0.21,14
+112,OBC,OBC,Uttarakhand,Dehradun,0.15,6
+113,OBC,OBC,Nagaland,Mokokchung,0.07,9
+114,General,General,Andhra Pradesh,Kurnool,0.32,10
+115,OBC,OBC,Bihar,Gaya,0.14,6
+116,General,General,Kerala,Kochi,0.29,6
+117,General,General,Arunachal Pradesh,Lower Subansiri,0.21,14
+118,General,General,Punjab,Amritsar,0.07,10
+119,OBC,OBC,Madhya Pradesh,Indore,0.21,6
+120,OBC,OBC,Assam,Silchar,0.07,14
+121,General,General,Goa,South Goa,0.1,10
+122,OBC,General,Tripura,West Tripura,0.11,25
+123,General,General,Jharkhand,Jamshedpur,0.28,8
+124,SC,SC,Manipur,Imphal East,0.14,6
+125,General,General,Telangana,Warangal,0.07,10
+126,General,General,Karnataka,Mysuru,0.27,8
+127,OBC,OBC,Kerala,Thiruvananthapuram,0.19,11
+128,General,General,Maharashtra,Mumbai,0.16,8
+129,General,General,Punjab,Ludhiana,0.07,10
+130,General,General,Assam,Kamrup,0.22,9
+131,General,SC,Goa,South Goa,0.1,18
+132,General,General,Karnataka,Bengaluru Urban,0.38,7
+133,SC,SC,Meghalaya,East Khasi Hills,0.31,11
+134,General,General,Himachal Pradesh,Kullu,0.18,10
+135,General,General,Mizoram,Champhai,0.31,7
+136,General,General,Punjab,Ludhiana,0.07,8
+137,OBC,OBC,Manipur,Churachandpur,0.05,12
+138,SC,SC,Tripura,Gomati,0.33,9
+139,OBC,OBC,Nagaland,Dimapur,0.27,11
+140,OBC,OBC,Maharashtra,Nagpur,0.16,6
+141,SC,SC,Arunachal Pradesh,Lower Subansiri,0.21,9
+142,SC,SC,Odisha,Bhubaneswar,0.2,10
+143,General,General,Tamil Nadu,Madurai,0.3,13
+144,SC,SC,Maharashtra,Nagpur,0.16,10
+145,General,General,Andhra Pradesh,Guntur,0.32,9
+146,General,General,Madhya Pradesh,Gwalior,0.18,8
+147,General,General,Telangana,Nizamabad,0.16,8
+148,General,General,Chhattisgarh,Bilaspur,0.3,10
+149,General,SC,Manipur,Churachandpur,0.05,19
+150,OBC,OBC,Madhya Pradesh,Gwalior,0.18,7
+151,General,General,Goa,North Goa,0.07,10
+152,ST,ST,Bihar,Gaya,0.14,14
+153,OBC,OBC,Nagaland,Dimapur,0.27,8
+154,General,General,Telangana,Hyderabad,0.3,10
+155,OBC,OBC,Odisha,Bhubaneswar,0.2,6
+156,SC,SC,Mizoram,Lunglei,0.33,11
+157,SC,SC,Goa,North Goa,0.07,10
+158,OBC,OBC,Telangana,Nizamabad,0.16,7
+159,OBC,OBC,Karnataka,Mysuru,0.27,6
+160,OBC,OBC,Tamil Nadu,Coimbatore,0.27,12
+161,General,General,Bihar,Patna,0.26,14
+162,SC,SC,Andhra Pradesh,Guntur,0.32,6
+163,SC,SC,Maharashtra,Pune,0.18,14
+164,General,General,Andhra Pradesh,Visakhapatnam,0.1,12
+165,OBC,OBC,Sikkim,South Sikkim,0.4,6
+166,General,General,Manipur,Imphal West,0.38,6
+167,General,General,Jharkhand,Ranchi,0.19,11
+168,SC,SC,West Bengal,Darjeeling,0.19,11
+169,General,General,Chhattisgarh,Durg,0.18,8
+170,OBC,OBC,Maharashtra,Pune,0.18,14
+171,General,General,Meghalaya,Ri Bhoi,0.15,12
+172,ST,ST,Manipur,Churachandpur,0.05,13
+173,OBC,OBC,Bihar,Muzaffarpur,0.29,10
+174,General,General,Jharkhand,Ranchi,0.19,9
+175,SC,SC,Bihar,Muzaffarpur,0.29,6
+176,OBC,OBC,Tripura,West Tripura,0.11,11
+177,SC,SC,Arunachal Pradesh,Lower Subansiri,0.21,6
+178,OBC,OBC,Punjab,Jalandhar,0.28,11
+179,OBC,OBC,Punjab,Amritsar,0.07,8
+180,OBC,OBC,Maharashtra,Nagpur,0.16,11
+181,General,General,Odisha,Rourkela,0.37,11
+182,OBC,OBC,Bihar,Patna,0.26,19
+183,General,General,Goa,South Goa,0.1,8
+184,General,General,Andhra Pradesh,Visakhapatnam,0.1,11
+185,SC,SC,Jharkhand,Jamshedpur,0.28,10
+186,General,General,Rajasthan,Udaipur,0.4,12
+187,General,General,Sikkim,West Sikkim,0.24,11
+188,OBC,OBC,Madhya Pradesh,Indore,0.21,8
+189,SC,SC,Manipur,Imphal West,0.38,10
+190,SC,SC,Odisha,Bhubaneswar,0.2,12
+191,General,General,Meghalaya,Ri Bhoi,0.15,11
+192,OBC,OBC,West Bengal,Kolkata,0.14,10
+193,General,General,Uttarakhand,Dehradun,0.15,13
+194,OBC,OBC,Maharashtra,Nagpur,0.16,10
+195,OBC,OBC,Gujarat,Vadodara,0.27,7
+196,OBC,OBC,Uttarakhand,Haridwar,0.26,11
+197,ST,ST,Haryana,Gurugram,0.08,8
+198,OBC,OBC,Meghalaya,West Garo Hills,0.08,10
+199,General,General,Chhattisgarh,Durg,0.18,11
+200,SC,SC,Jharkhand,Jamshedpur,0.28,7
+201,ST,ST,Punjab,Ludhiana,0.07,7
+202,General,General,Jharkhand,Jamshedpur,0.28,8
+203,OBC,OBC,Himachal Pradesh,Kullu,0.18,6
+204,General,General,Uttar Pradesh,Lucknow,0.38,8
+205,SC,SC,Telangana,Warangal,0.07,10
+206,SC,SC,Uttar Pradesh,Varanasi,0.23,8
+207,SC,SC,Telangana,Hyderabad,0.3,8
+208,General,General,Karnataka,Hubballi-Dharwad,0.29,6
+209,OBC,OBC,Maharashtra,Nagpur,0.16,14
+210,General,General,Uttar Pradesh,Lucknow,0.38,10
+211,OBC,OBC,Uttarakhand,Dehradun,0.15,12
+212,SC,SC,Uttarakhand,Dehradun,0.15,8
+213,General,General,Manipur,Imphal East,0.14,11
+214,General,General,Jharkhand,Dhanbad,0.12,14
+215,General,General,Punjab,Jalandhar,0.28,10
+216,OBC,OBC,Punjab,Amritsar,0.07,9
+217,General,General,Madhya Pradesh,Bhopal,0.29,13
+218,OBC,OBC,Punjab,Amritsar,0.07,13
+219,ST,ST,Bihar,Muzaffarpur,0.29,6
+220,General,General,Uttar Pradesh,Lucknow,0.38,12
+221,SC,SC,Assam,Silchar,0.07,7
+222,ST,ST,Himachal Pradesh,Kullu,0.18,11
+223,ST,ST,Andhra Pradesh,Visakhapatnam,0.1,13
+224,OBC,OBC,Tamil Nadu,Coimbatore,0.27,6
+225,OBC,OBC,Uttarakhand,Nainital,0.14,13
+226,ST,SC,Goa,North Goa,0.07,17
+227,SC,SC,Uttarakhand,Nainital,0.14,12
+228,General,General,Mizoram,Aizawl,0.2,9
+229,General,General,Himachal Pradesh,Kangra,0.11,12
+230,OBC,OBC,Arunachal Pradesh,Lower Subansiri,0.21,7
+231,SC,SC,Manipur,Imphal West,0.38,14
+232,General,General,Himachal Pradesh,Kangra,0.11,34
+233,General,General,Nagaland,Mokokchung,0.07,13
+234,General,General,Tamil Nadu,Chennai,0.06,8
+235,SC,SC,Odisha,Rourkela,0.37,10
+236,SC,SC,Manipur,Churachandpur,0.05,6
+237,SC,SC,Odisha,Rourkela,0.37,7
+238,SC,SC,Kerala,Kozhikode,0.14,12
+239,SC,SC,Assam,Silchar,0.07,6
+240,General,General,Uttar Pradesh,Varanasi,0.23,13
+241,OBC,OBC,Madhya Pradesh,Gwalior,0.18,10
+242,General,General,West Bengal,Kolkata,0.14,10
+243,General,General,Goa,South Goa,0.1,7
+244,SC,SC,Chhattisgarh,Durg,0.18,9
+245,OBC,OBC,Nagaland,Dimapur,0.27,8
+246,SC,SC,Manipur,Imphal West,0.38,8
+247,ST,ST,Himachal Pradesh,Kullu,0.18,13
+248,ST,ST,Punjab,Amritsar,0.07,6
+249,OBC,OBC,Punjab,Ludhiana,0.07,8
+250,OBC,OBC,Uttarakhand,Nainital,0.14,13
+251,ST,ST,Arunachal Pradesh,Tawang,0.06,13
+252,General,General,Kerala,Kochi,0.29,14
+253,SC,SC,Gujarat,Surat,0.19,10
+254,SC,SC,Andhra Pradesh,Guntur,0.32,8
+255,General,General,Assam,Dibrugarh,0.13,8
+256,OBC,OBC,Meghalaya,East Khasi Hills,0.31,14
+257,General,General,Nagaland,Mokokchung,0.07,9
+258,OBC,OBC,Maharashtra,Mumbai,0.16,10
+259,General,General,Meghalaya,Ri Bhoi,0.15,11
+260,General,General,West Bengal,Darjeeling,0.19,9
+261,General,General,Uttarakhand,Dehradun,0.15,7
+262,OBC,OBC,Uttar Pradesh,Kanpur,0.36,8
+263,SC,SC,Kerala,Kozhikode,0.14,7
+264,General,General,Odisha,Cuttack,0.07,6
+265,ST,ST,Sikkim,East Sikkim,0.22,10
+266,SC,SC,Himachal Pradesh,Shimla,0.37,12
+267,OBC,OBC,West Bengal,Kolkata,0.14,12
+268,OBC,OBC,Andhra Pradesh,Guntur,0.32,11
+269,General,General,Meghalaya,West Garo Hills,0.08,8
+270,General,General,Himachal Pradesh,Kangra,0.11,8
+271,SC,SC,Uttar Pradesh,Kanpur,0.36,6
+272,General,General,Bihar,Gaya,0.14,6
+273,SC,SC,Karnataka,Bengaluru Urban,0.38,20
+274,OBC,OBC,Rajasthan,Udaipur,0.4,7
+275,OBC,OBC,Jharkhand,Dhanbad,0.12,7
+276,General,General,Mizoram,Champhai,0.31,10
+277,General,General,Kerala,Thiruvananthapuram,0.19,14
+278,OBC,OBC,Nagaland,Mokokchung,0.07,9
+279,SC,SC,Sikkim,West Sikkim,0.24,9
+280,General,General,Tamil Nadu,Madurai,0.3,12
+281,ST,ST,Meghalaya,East Khasi Hills,0.31,13
+282,OBC,OBC,Bihar,Gaya,0.14,14
+283,General,General,Goa,Ponda,0.19,9
+284,General,General,Goa,South Goa,0.1,9
+285,SC,SC,Uttar Pradesh,Lucknow,0.38,9
+286,General,General,Goa,North Goa,0.07,13
+287,SC,SC,Chhattisgarh,Raipur,0.39,8
+288,OBC,OBC,Andhra Pradesh,Visakhapatnam,0.1,14
+289,OBC,OBC,Goa,Ponda,0.19,14
+290,ST,ST,Tamil Nadu,Coimbatore,0.27,13
+291,SC,SC,Nagaland,Mokokchung,0.07,8
+292,General,General,Mizoram,Aizawl,0.2,11
+293,General,General,Goa,Ponda,0.19,14
+294,SC,SC,Arunachal Pradesh,Papum Pare,0.14,13
+295,SC,SC,Bihar,Muzaffarpur,0.29,12
+296,General,General,West Bengal,Howrah,0.1,13
+297,OBC,OBC,Andhra Pradesh,Kurnool,0.32,12
+298,OBC,OBC,Bihar,Gaya,0.14,7
+299,General,General,Arunachal Pradesh,Tawang,0.06,7
+300,SC,SC,Maharashtra,Nagpur,0.16,8
+301,OBC,OBC,Telangana,Nizamabad,0.16,13
+302,SC,SC,Chhattisgarh,Durg,0.18,6
+303,General,General,Tripura,Sepahijala,0.28,6
+304,ST,ST,Madhya Pradesh,Bhopal,0.29,11
+305,OBC,SC,Tripura,West Tripura,0.11,25
+306,SC,SC,Punjab,Ludhiana,0.07,9
+307,SC,SC,Tamil Nadu,Coimbatore,0.27,8
+308,OBC,OBC,Telangana,Hyderabad,0.3,10
+309,OBC,OBC,Uttarakhand,Nainital,0.14,13
+310,General,General,Tripura,Sepahijala,0.28,9
+311,OBC,OBC,Goa,South Goa,0.1,8
+312,OBC,OBC,Arunachal Pradesh,Papum Pare,0.14,14
+313,General,General,West Bengal,Howrah,0.1,12
+314,ST,ST,Assam,Dibrugarh,0.13,14
+315,OBC,OBC,Andhra Pradesh,Kurnool,0.32,14
+316,OBC,OBC,Nagaland,Mokokchung,0.07,13
+317,OBC,OBC,West Bengal,Howrah,0.1,14
+318,OBC,OBC,Chhattisgarh,Bilaspur,0.3,13
+319,OBC,OBC,Maharashtra,Mumbai,0.16,14
+320,ST,ST,Telangana,Warangal,0.07,11
+321,SC,SC,Uttar Pradesh,Varanasi,0.23,11
+322,General,General,Tamil Nadu,Chennai,0.06,12
+323,General,General,Odisha,Rourkela,0.37,8
+324,SC,SC,Meghalaya,East Khasi Hills,0.31,6
+325,SC,SC,Tamil Nadu,Coimbatore,0.27,11
+326,SC,SC,Jharkhand,Ranchi,0.19,8
+327,General,General,Manipur,Imphal West,0.38,8
+328,ST,ST,Manipur,Imphal East,0.14,12
+329,General,General,Rajasthan,Udaipur,0.4,6
+330,ST,ST,Jharkhand,Ranchi,0.19,7
+331,OBC,OBC,Bihar,Muzaffarpur,0.29,7
+332,OBC,OBC,Andhra Pradesh,Visakhapatnam,0.1,12
+333,SC,SC,Odisha,Cuttack,0.07,9
+334,General,General,Sikkim,East Sikkim,0.22,12
+335,General,General,Bihar,Gaya,0.14,8
+336,General,General,Himachal Pradesh,Shimla,0.37,6
+337,OBC,OBC,Tripura,West Tripura,0.11,6
+338,OBC,OBC,Andhra Pradesh,Visakhapatnam,0.1,11
+339,SC,SC,Uttar Pradesh,Kanpur,0.36,12
+340,OBC,OBC,Odisha,Bhubaneswar,0.2,7
+341,SC,SC,Bihar,Muzaffarpur,0.29,10
+342,General,General,Karnataka,Mysuru,0.27,14
+343,SC,SC,Uttarakhand,Dehradun,0.15,13
+344,General,General,West Bengal,Howrah,0.1,12
+345,OBC,OBC,Maharashtra,Mumbai,0.16,6
+346,OBC,OBC,Maharashtra,Mumbai,0.16,7
+347,OBC,OBC,Uttar Pradesh,Lucknow,0.38,12
+348,SC,SC,Assam,Kamrup,0.22,10
+349,OBC,OBC,Gujarat,Surat,0.19,11
+350,OBC,OBC,Uttar Pradesh,Lucknow,0.38,10
+351,General,General,Karnataka,Hubballi-Dharwad,0.29,8
+352,OBC,OBC,Mizoram,Lunglei,0.33,6
+353,OBC,OBC,Karnataka,Hubballi-Dharwad,0.29,10
+354,General,General,Goa,North Goa,0.07,8
+355,OBC,OBC,Tripura,Gomati,0.33,9
+356,General,General,Sikkim,South Sikkim,0.4,10
+357,General,OBC,Andhra Pradesh,Kurnool,0.32,28
+358,SC,SC,West Bengal,Darjeeling,0.19,11
+359,OBC,OBC,Rajasthan,Udaipur,0.4,12
+360,OBC,OBC,Assam,Dibrugarh,0.13,14
+361,General,General,Madhya Pradesh,Bhopal,0.29,8
+362,General,General,Meghalaya,East Khasi Hills,0.31,7
+363,OBC,OBC,Meghalaya,Ri Bhoi,0.15,13
+364,OBC,OBC,Tripura,Sepahijala,0.28,10
+365,General,General,Andhra Pradesh,Guntur,0.32,14
+366,General,General,Tamil Nadu,Chennai,0.06,11
+367,General,General,Goa,North Goa,0.07,6
+368,General,General,Karnataka,Mysuru,0.27,9
+369,OBC,OBC,Jharkhand,Jamshedpur,0.28,10
+370,OBC,OBC,Telangana,Warangal,0.07,11
+371,SC,SC,Rajasthan,Jodhpur,0.3,9
+372,General,General,Rajasthan,Jaipur,0.28,13
+373,SC,SC,Odisha,Rourkela,0.37,13
+374,General,General,West Bengal,Kolkata,0.14,9
+375,General,General,Telangana,Hyderabad,0.3,11
+376,OBC,OBC,Rajasthan,Jodhpur,0.3,9
+377,OBC,OBC,Telangana,Nizamabad,0.16,9
+378,SC,SC,Meghalaya,Ri Bhoi,0.15,10
+379,General,General,Haryana,Faridabad,0.06,6
+380,OBC,OBC,Arunachal Pradesh,Tawang,0.06,11
+381,OBC,OBC,Bihar,Gaya,0.14,13
+382,General,General,West Bengal,Howrah,0.1,8
+383,ST,ST,Uttar Pradesh,Lucknow,0.38,6
+384,SC,SC,Haryana,Gurugram,0.08,14
+385,General,General,Manipur,Imphal East,0.14,9
+386,ST,ST,Goa,Ponda,0.19,12
+387,OBC,OBC,Rajasthan,Jaipur,0.28,12
+388,ST,ST,Haryana,Hisar,0.38,13
+389,General,General,Sikkim,East Sikkim,0.22,14
+390,OBC,OBC,Rajasthan,Jaipur,0.28,7
+391,General,General,Rajasthan,Jodhpur,0.3,7
+392,OBC,OBC,Tamil Nadu,Madurai,0.3,6
+393,General,General,Bihar,Muzaffarpur,0.29,9
+394,SC,SC,Bihar,Muzaffarpur,0.29,11
+395,General,General,Tripura,West Tripura,0.11,14
+396,SC,SC,Manipur,Imphal East,0.14,9
+397,General,General,Haryana,Gurugram,0.08,6
+398,General,General,Punjab,Ludhiana,0.07,6
+399,General,General,Telangana,Hyderabad,0.3,9
+400,OBC,OBC,Punjab,Ludhiana,0.07,8
+401,OBC,OBC,Tripura,Gomati,0.33,12
+402,OBC,OBC,Goa,North Goa,0.07,10
+403,OBC,OBC,Chhattisgarh,Durg,0.18,12
+404,General,General,Meghalaya,East Khasi Hills,0.31,7
+405,General,General,Mizoram,Champhai,0.31,10
+406,SC,SC,Madhya Pradesh,Gwalior,0.18,9
+407,General,General,Nagaland,Kohima,0.14,6
+408,General,General,Uttar Pradesh,Lucknow,0.38,12
+409,OBC,OBC,Bihar,Muzaffarpur,0.29,10
+410,General,General,Punjab,Amritsar,0.07,9
+411,OBC,OBC,Assam,Silchar,0.07,12
+412,OBC,OBC,Manipur,Imphal West,0.38,9
+413,OBC,OBC,Andhra Pradesh,Guntur,0.32,12
+414,SC,SC,Kerala,Kochi,0.29,13
+415,General,General,Haryana,Hisar,0.38,8
+416,OBC,OBC,Uttarakhand,Nainital,0.14,10
+417,SC,SC,Kerala,Kozhikode,0.14,10
+418,General,General,Chhattisgarh,Raipur,0.39,7
+419,SC,SC,Andhra Pradesh,Guntur,0.32,10
+420,General,General,Tamil Nadu,Coimbatore,0.27,8
+421,SC,SC,Uttar Pradesh,Varanasi,0.23,7
+422,SC,SC,Maharashtra,Pune,0.18,6
+423,General,General,Andhra Pradesh,Kurnool,0.32,7
+424,General,General,West Bengal,Kolkata,0.14,10
+425,OBC,SC,Maharashtra,Mumbai,0.16,36
+426,General,General,Punjab,Ludhiana,0.07,8
+427,General,General,Himachal Pradesh,Kullu,0.18,8
+428,OBC,OBC,Bihar,Gaya,0.14,14
+429,OBC,OBC,Kerala,Kochi,0.29,10
+430,OBC,OBC,Karnataka,Mysuru,0.27,10
+431,SC,SC,Uttarakhand,Dehradun,0.15,10
+432,OBC,OBC,Rajasthan,Jodhpur,0.3,11
+433,General,General,Tamil Nadu,Coimbatore,0.27,11
+434,General,General,Arunachal Pradesh,Tawang,0.06,38
+435,SC,SC,Andhra Pradesh,Guntur,0.32,10
+436,OBC,OBC,Haryana,Hisar,0.38,13
+437,SC,SC,Tamil Nadu,Coimbatore,0.27,13
+438,OBC,OBC,West Bengal,Darjeeling,0.19,11
+439,OBC,OBC,Mizoram,Lunglei,0.33,9
+440,General,General,Chhattisgarh,Raipur,0.39,10
+441,General,General,Uttarakhand,Haridwar,0.26,14
+442,General,General,West Bengal,Howrah,0.1,10
+443,OBC,OBC,Madhya Pradesh,Bhopal,0.29,13
+444,OBC,OBC,Jharkhand,Jamshedpur,0.28,8
+445,OBC,OBC,West Bengal,Howrah,0.1,13
+446,General,General,West Bengal,Darjeeling,0.19,10
+447,General,General,Andhra Pradesh,Kurnool,0.32,8
+448,General,General,Jharkhand,Jamshedpur,0.28,8
+449,General,General,Gujarat,Ahmedabad,0.06,11
+450,General,General,Karnataka,Hubballi-Dharwad,0.29,14
+451,OBC,OBC,Sikkim,East Sikkim,0.22,7
+452,ST,ST,Chhattisgarh,Raipur,0.39,11
+453,General,General,Telangana,Nizamabad,0.16,14
+454,SC,SC,Bihar,Muzaffarpur,0.29,13
+455,General,General,Bihar,Gaya,0.14,10
+456,General,General,Sikkim,South Sikkim,0.4,10
+457,SC,SC,Himachal Pradesh,Kangra,0.11,7
+458,ST,ST,Gujarat,Ahmedabad,0.06,10
+459,ST,ST,Haryana,Hisar,0.38,8
+460,SC,SC,Kerala,Kozhikode,0.14,9
+461,OBC,OBC,Mizoram,Aizawl,0.2,7
+462,SC,SC,Rajasthan,Jaipur,0.28,8
+463,OBC,OBC,Assam,Silchar,0.07,14
+464,SC,SC,Odisha,Cuttack,0.07,10
+465,General,General,Uttar Pradesh,Kanpur,0.36,13
+466,OBC,OBC,Arunachal Pradesh,Lower Subansiri,0.21,10
+467,General,General,Meghalaya,East Khasi Hills,0.31,13
+468,General,General,Gujarat,Ahmedabad,0.06,9
+469,SC,SC,Meghalaya,Ri Bhoi,0.15,7
+470,SC,SC,Gujarat,Surat,0.19,14
+471,General,General,Tamil Nadu,Chennai,0.06,14
+472,OBC,OBC,Maharashtra,Nagpur,0.16,6
+473,General,General,Tamil Nadu,Coimbatore,0.27,10
+474,OBC,OBC,Goa,South Goa,0.1,14
+475,OBC,OBC,Himachal Pradesh,Kullu,0.18,11
+476,General,General,Manipur,Imphal West,0.38,13
+477,General,General,Uttar Pradesh,Varanasi,0.23,14
+478,SC,SC,Himachal Pradesh,Kullu,0.18,13
+479,SC,SC,Tamil Nadu,Chennai,0.06,8
+480,General,General,Gujarat,Surat,0.19,7
+481,General,General,Sikkim,South Sikkim,0.4,12
+482,General,OBC,Haryana,Faridabad,0.06,35
+483,General,ST,Arunachal Pradesh,Papum Pare,0.14,12
+484,OBC,OBC,West Bengal,Darjeeling,0.19,8
+485,OBC,OBC,Assam,Kamrup,0.22,11
+486,OBC,OBC,Manipur,Churachandpur,0.05,6
+487,SC,SC,Goa,Ponda,0.19,11
+488,General,OBC,Meghalaya,Ri Bhoi,0.15,34
+489,General,General,Uttar Pradesh,Lucknow,0.38,8
+490,OBC,OBC,Tripura,Sepahijala,0.28,13
+491,General,General,Telangana,Warangal,0.07,7
+492,SC,SC,Maharashtra,Mumbai,0.16,11
+493,ST,ST,Meghalaya,West Garo Hills,0.08,8
+494,SC,SC,Andhra Pradesh,Guntur,0.32,13
+495,General,General,Jharkhand,Dhanbad,0.12,11
+496,OBC,OBC,Sikkim,West Sikkim,0.24,14
+497,General,General,Andhra Pradesh,Visakhapatnam,0.1,9
+498,OBC,OBC,Uttarakhand,Dehradun,0.15,9
+499,General,General,Telangana,Warangal,0.07,10
+500,OBC,OBC,Assam,Silchar,0.07,9
+501,SC,SC,Assam,Kamrup,0.22,6
+502,SC,SC,Chhattisgarh,Durg,0.18,6
+503,General,General,Kerala,Kochi,0.29,14
+504,OBC,OBC,Karnataka,Hubballi-Dharwad,0.29,8
+505,General,General,Meghalaya,West Garo Hills,0.08,7
+506,OBC,OBC,Karnataka,Hubballi-Dharwad,0.29,11
+507,OBC,OBC,West Bengal,Darjeeling,0.19,13
+508,General,General,Telangana,Hyderabad,0.3,9
+509,OBC,OBC,Nagaland,Dimapur,0.27,10
+510,OBC,OBC,Bihar,Gaya,0.14,14
+511,General,General,Maharashtra,Pune,0.18,11
+512,SC,SC,Nagaland,Kohima,0.14,10
+513,OBC,OBC,Maharashtra,Mumbai,0.16,6
+514,OBC,OBC,Gujarat,Vadodara,0.27,7
+515,General,General,Karnataka,Bengaluru Urban,0.38,12
+516,SC,SC,Telangana,Warangal,0.07,6
+517,ST,ST,Andhra Pradesh,Kurnool,0.32,8
+518,SC,SC,Uttar Pradesh,Lucknow,0.38,6
+519,General,General,Odisha,Cuttack,0.07,13
+520,SC,General,Madhya Pradesh,Indore,0.21,12
+521,SC,SC,Sikkim,West Sikkim,0.24,7
+522,ST,ST,Maharashtra,Mumbai,0.16,7
+523,SC,SC,Mizoram,Aizawl,0.2,6
+524,OBC,OBC,Tripura,West Tripura,0.11,14
+525,ST,ST,Manipur,Churachandpur,0.05,14
+526,General,General,Bihar,Gaya,0.14,10
+527,OBC,OBC,Tripura,Gomati,0.33,11
+528,General,General,Punjab,Amritsar,0.07,7
+529,ST,ST,Tamil Nadu,Coimbatore,0.27,14
+530,ST,ST,Telangana,Warangal,0.07,7
+531,OBC,OBC,Goa,North Goa,0.07,13
+532,General,General,Madhya Pradesh,Bhopal,0.29,8
+533,SC,SC,Gujarat,Vadodara,0.27,7
+534,SC,SC,Kerala,Kozhikode,0.14,6
+535,General,General,Uttar Pradesh,Varanasi,0.23,9
+536,General,General,Telangana,Hyderabad,0.3,8
+537,SC,SC,Sikkim,East Sikkim,0.22,11
+538,OBC,OBC,Uttarakhand,Haridwar,0.26,10
+539,SC,SC,Maharashtra,Nagpur,0.16,12
+540,SC,SC,Mizoram,Lunglei,0.33,11
+541,OBC,OBC,Meghalaya,West Garo Hills,0.08,14
+542,General,General,Meghalaya,West Garo Hills,0.08,8
+543,General,General,Chhattisgarh,Raipur,0.39,13
+544,General,General,Gujarat,Surat,0.19,6
+545,General,General,Madhya Pradesh,Gwalior,0.18,13
+546,General,General,Punjab,Jalandhar,0.28,25
+547,OBC,OBC,Chhattisgarh,Durg,0.18,7
+548,SC,SC,Odisha,Bhubaneswar,0.2,14
+549,SC,SC,Uttarakhand,Dehradun,0.15,10
+550,SC,SC,Uttarakhand,Dehradun,0.15,6
+551,OBC,OBC,Odisha,Bhubaneswar,0.2,8
+552,General,General,Kerala,Kochi,0.29,7
+553,OBC,OBC,Goa,Ponda,0.19,14
+554,SC,SC,Maharashtra,Nagpur,0.16,10
+555,General,General,Tripura,Gomati,0.33,14
+556,OBC,OBC,Madhya Pradesh,Bhopal,0.29,13
+557,OBC,OBC,Uttarakhand,Dehradun,0.15,9
+558,General,General,Uttarakhand,Nainital,0.14,8
+559,OBC,OBC,Kerala,Kozhikode,0.14,10
+560,SC,SC,Telangana,Nizamabad,0.16,11
+561,OBC,OBC,Chhattisgarh,Bilaspur,0.3,13
+562,General,General,Uttarakhand,Dehradun,0.15,11
+563,SC,SC,Karnataka,Bengaluru Urban,0.38,6
+564,General,General,Telangana,Hyderabad,0.3,8
+565,General,SC,Telangana,Warangal,0.07,20
+566,OBC,OBC,Tamil Nadu,Chennai,0.06,13
+567,General,General,West Bengal,Kolkata,0.14,9
+568,General,General,Telangana,Warangal,0.07,10
+569,OBC,OBC,Tamil Nadu,Coimbatore,0.27,10
+570,General,General,Bihar,Gaya,0.14,9
+571,OBC,OBC,Chhattisgarh,Raipur,0.39,10
+572,General,General,Himachal Pradesh,Kangra,0.11,11
+573,SC,SC,West Bengal,Darjeeling,0.19,6
+574,OBC,OBC,Odisha,Cuttack,0.07,13
+575,General,General,Meghalaya,East Khasi Hills,0.31,8
+576,General,General,Sikkim,West Sikkim,0.24,37
+577,SC,SC,Arunachal Pradesh,Tawang,0.06,10
+578,OBC,OBC,Uttarakhand,Dehradun,0.15,10
+579,SC,SC,Rajasthan,Jaipur,0.28,9
+580,OBC,OBC,Goa,South Goa,0.1,7
+581,OBC,OBC,Mizoram,Lunglei,0.33,9
+582,General,General,Gujarat,Vadodara,0.27,11
+583,General,General,Tripura,Sepahijala,0.28,13
+584,ST,SC,Goa,Ponda,0.19,24
+585,SC,SC,Manipur,Imphal East,0.14,8
+586,General,General,Haryana,Gurugram,0.08,14
+587,General,General,Haryana,Hisar,0.38,10
+588,SC,SC,Manipur,Imphal East,0.14,11
+589,General,General,Karnataka,Bengaluru Urban,0.38,8
+590,General,General,Madhya Pradesh,Gwalior,0.18,14
+591,General,General,Haryana,Gurugram,0.08,9
+592,SC,SC,Chhattisgarh,Durg,0.18,8
+593,SC,SC,Karnataka,Mysuru,0.27,9
+594,General,General,Uttar Pradesh,Varanasi,0.23,7
+595,General,General,Uttar Pradesh,Varanasi,0.23,13
+596,SC,SC,Tamil Nadu,Madurai,0.3,7
+597,SC,SC,Tamil Nadu,Coimbatore,0.27,9
+598,OBC,ST,Andhra Pradesh,Visakhapatnam,0.1,37
+599,General,General,Sikkim,West Sikkim,0.24,13
+600,General,General,Himachal Pradesh,Kullu,0.18,14
+601,General,General,Goa,Ponda,0.19,7
+602,SC,SC,Bihar,Muzaffarpur,0.29,11
+603,SC,SC,Telangana,Warangal,0.07,7
+604,General,General,Nagaland,Dimapur,0.27,14
+605,General,General,Madhya Pradesh,Indore,0.21,7
+606,General,General,Kerala,Kozhikode,0.14,11
+607,SC,SC,West Bengal,Kolkata,0.14,7
+608,General,General,Chhattisgarh,Raipur,0.39,12
+609,SC,SC,Bihar,Muzaffarpur,0.29,9
+610,OBC,OBC,Himachal Pradesh,Shimla,0.37,9
+611,OBC,OBC,Kerala,Kochi,0.29,9
+612,General,General,Gujarat,Vadodara,0.27,7
+613,General,General,Tamil Nadu,Coimbatore,0.27,8
+614,OBC,OBC,Odisha,Bhubaneswar,0.2,12
+615,SC,SC,Odisha,Cuttack,0.07,14
+616,General,General,Odisha,Rourkela,0.37,9
+617,General,General,Madhya Pradesh,Indore,0.21,8
+618,SC,SC,Uttarakhand,Dehradun,0.15,8
+619,OBC,OBC,Goa,North Goa,0.07,12
+620,OBC,OBC,Rajasthan,Jodhpur,0.3,7
+621,SC,SC,Goa,North Goa,0.07,7
+622,OBC,OBC,Chhattisgarh,Bilaspur,0.3,7
+623,General,General,Karnataka,Mysuru,0.27,9
+624,General,General,Tamil Nadu,Chennai,0.06,11
+625,OBC,OBC,Odisha,Bhubaneswar,0.2,13
+626,General,General,Arunachal Pradesh,Lower Subansiri,0.21,14
+627,OBC,OBC,Madhya Pradesh,Indore,0.21,14
+628,OBC,OBC,Bihar,Patna,0.26,12
+629,General,General,Bihar,Muzaffarpur,0.29,14
+630,General,General,Madhya Pradesh,Indore,0.21,13
+631,OBC,OBC,Rajasthan,Udaipur,0.4,9
+632,SC,SC,Goa,North Goa,0.07,6
+633,General,General,Arunachal Pradesh,Tawang,0.06,8
+634,General,General,Andhra Pradesh,Guntur,0.32,13
+635,SC,SC,Uttarakhand,Haridwar,0.26,11
+636,SC,SC,Himachal Pradesh,Kullu,0.18,11
+637,General,General,Sikkim,East Sikkim,0.22,13
+638,OBC,OBC,Andhra Pradesh,Guntur,0.32,9
+639,General,General,Maharashtra,Nagpur,0.16,7
+640,OBC,OBC,Tripura,Gomati,0.33,10
+641,General,General,Nagaland,Dimapur,0.27,11
+642,OBC,OBC,Sikkim,South Sikkim,0.4,12
+643,ST,ST,Gujarat,Ahmedabad,0.06,13
+644,OBC,OBC,Karnataka,Bengaluru Urban,0.38,12
+645,OBC,General,Goa,South Goa,0.1,23
+646,OBC,OBC,Rajasthan,Jaipur,0.28,12
+647,SC,SC,Chhattisgarh,Raipur,0.39,11
+648,General,General,Arunachal Pradesh,Papum Pare,0.14,12
+649,OBC,OBC,Chhattisgarh,Bilaspur,0.3,12
+650,General,General,Madhya Pradesh,Gwalior,0.18,11
+651,OBC,OBC,Tripura,West Tripura,0.11,9
+652,General,General,Haryana,Faridabad,0.06,29
+653,SC,SC,Assam,Silchar,0.07,23
+654,OBC,OBC,Arunachal Pradesh,Lower Subansiri,0.21,10
+655,OBC,OBC,Assam,Kamrup,0.22,9
+656,OBC,OBC,Gujarat,Ahmedabad,0.06,12
+657,General,General,West Bengal,Howrah,0.1,10
+658,SC,SC,Nagaland,Dimapur,0.27,12
+659,OBC,OBC,Telangana,Warangal,0.07,6
+660,General,General,Assam,Kamrup,0.22,10
+661,ST,ST,Uttar Pradesh,Kanpur,0.36,7
+662,OBC,OBC,Himachal Pradesh,Kullu,0.18,14
+663,OBC,OBC,Gujarat,Ahmedabad,0.06,12
+664,General,General,Nagaland,Dimapur,0.27,14
+665,General,General,Jharkhand,Ranchi,0.19,10
+666,OBC,OBC,Andhra Pradesh,Kurnool,0.32,12
+667,General,General,Himachal Pradesh,Shimla,0.37,9
+668,SC,SC,Maharashtra,Nagpur,0.16,7
+669,OBC,OBC,Rajasthan,Udaipur,0.4,11
+670,SC,SC,Goa,Ponda,0.19,11
+671,SC,SC,Haryana,Faridabad,0.06,6
+672,SC,SC,Meghalaya,West Garo Hills,0.08,14
+673,SC,SC,Jharkhand,Ranchi,0.19,11
+674,ST,ST,Nagaland,Kohima,0.14,9
+675,General,General,Punjab,Amritsar,0.07,7
+676,OBC,OBC,Odisha,Cuttack,0.07,14
+677,ST,ST,Telangana,Hyderabad,0.3,8
+678,General,General,Tripura,West Tripura,0.11,9
+679,OBC,OBC,Goa,Ponda,0.19,8
+680,SC,SC,Sikkim,East Sikkim,0.22,8
+681,General,General,Madhya Pradesh,Gwalior,0.18,13
+682,SC,OBC,Himachal Pradesh,Kangra,0.11,28
+683,SC,SC,Punjab,Ludhiana,0.07,7
+684,General,General,Mizoram,Lunglei,0.33,14
+685,General,General,Kerala,Kozhikode,0.14,8
+686,General,General,Telangana,Hyderabad,0.3,7
+687,General,General,Mizoram,Champhai,0.31,8
+688,SC,SC,Punjab,Jalandhar,0.28,12
+689,SC,SC,Telangana,Nizamabad,0.16,9
+690,OBC,OBC,Telangana,Hyderabad,0.3,9
+691,General,General,Andhra Pradesh,Kurnool,0.32,13
+692,General,General,West Bengal,Kolkata,0.14,8
+693,SC,SC,Rajasthan,Jaipur,0.28,6
+694,General,General,Punjab,Amritsar,0.07,13
+695,OBC,OBC,Odisha,Cuttack,0.07,13
+696,OBC,ST,Uttar Pradesh,Lucknow,0.38,22
+697,General,General,Rajasthan,Udaipur,0.4,13
+698,General,General,Punjab,Amritsar,0.07,12
+699,SC,SC,Assam,Silchar,0.07,8
+700,ST,ST,Nagaland,Mokokchung,0.07,12
+701,OBC,OBC,Jharkhand,Ranchi,0.19,10
+702,ST,ST,Punjab,Jalandhar,0.28,13
+703,ST,ST,Odisha,Rourkela,0.37,8
+704,General,General,Mizoram,Champhai,0.31,28
+705,SC,SC,Mizoram,Lunglei,0.33,11
+706,General,General,Tripura,West Tripura,0.11,7
+707,General,General,Chhattisgarh,Bilaspur,0.3,13
+708,OBC,OBC,Tripura,Gomati,0.33,9
+709,General,General,Andhra Pradesh,Kurnool,0.32,11
+710,SC,SC,Andhra Pradesh,Guntur,0.32,12
+711,General,General,Jharkhand,Jamshedpur,0.28,14
+712,SC,SC,Assam,Kamrup,0.22,10
+713,ST,ST,Gujarat,Surat,0.19,14
+714,SC,SC,Kerala,Kozhikode,0.14,10
+715,General,General,Uttarakhand,Dehradun,0.15,6
+716,SC,SC,Mizoram,Aizawl,0.2,9
+717,OBC,OBC,Nagaland,Mokokchung,0.07,13
+718,General,General,Gujarat,Surat,0.19,13
+719,OBC,OBC,Chhattisgarh,Durg,0.18,11
+720,General,General,Himachal Pradesh,Shimla,0.37,6
+721,OBC,OBC,Bihar,Muzaffarpur,0.29,14
+722,General,General,Telangana,Hyderabad,0.3,9
+723,SC,SC,Uttar Pradesh,Lucknow,0.38,12
+724,General,General,Manipur,Imphal West,0.38,11
+725,OBC,OBC,Andhra Pradesh,Guntur,0.32,7
+726,General,General,Jharkhand,Ranchi,0.19,6
+727,OBC,OBC,Goa,South Goa,0.1,7
+728,OBC,OBC,Jharkhand,Dhanbad,0.12,12
+729,General,General,Gujarat,Surat,0.19,6
+730,General,General,Meghalaya,East Khasi Hills,0.31,9
+731,SC,SC,Rajasthan,Udaipur,0.4,7
+732,ST,ST,Tamil Nadu,Chennai,0.06,9
+733,OBC,OBC,Maharashtra,Mumbai,0.16,7
+734,OBC,OBC,Nagaland,Dimapur,0.27,14
+735,ST,ST,Assam,Kamrup,0.22,6
+736,OBC,OBC,Nagaland,Mokokchung,0.07,13
+737,General,General,Andhra Pradesh,Visakhapatnam,0.1,7
+738,OBC,OBC,Himachal Pradesh,Kangra,0.11,8
+739,General,General,Karnataka,Bengaluru Urban,0.38,13
+740,SC,SC,Andhra Pradesh,Kurnool,0.32,7
+741,General,General,Uttarakhand,Dehradun,0.15,13
+742,SC,SC,Sikkim,East Sikkim,0.22,9
+743,SC,SC,Karnataka,Bengaluru Urban,0.38,13
+744,SC,SC,Mizoram,Lunglei,0.33,8
+745,General,General,Punjab,Ludhiana,0.07,13
+746,OBC,ST,Madhya Pradesh,Gwalior,0.18,19
+747,OBC,OBC,Punjab,Ludhiana,0.07,6
+748,General,General,Goa,South Goa,0.1,6
+749,General,General,Punjab,Amritsar,0.07,8
+750,General,General,Karnataka,Mysuru,0.27,10
+751,OBC,OBC,Rajasthan,Jaipur,0.28,12
+752,General,General,Chhattisgarh,Raipur,0.39,8
+753,SC,SC,Chhattisgarh,Raipur,0.39,11
+754,General,General,Nagaland,Kohima,0.14,8
+755,OBC,OBC,Chhattisgarh,Durg,0.18,8
+756,OBC,OBC,Manipur,Imphal West,0.38,7
+757,General,General,Uttarakhand,Dehradun,0.15,13
+758,OBC,OBC,Tripura,Gomati,0.33,9
+759,OBC,OBC,Odisha,Bhubaneswar,0.2,11
+760,ST,ST,Chhattisgarh,Bilaspur,0.3,11
+761,SC,SC,Telangana,Warangal,0.07,6
+762,ST,ST,Madhya Pradesh,Bhopal,0.29,10
+763,OBC,OBC,Sikkim,West Sikkim,0.24,12
+764,General,General,Gujarat,Ahmedabad,0.06,9
+765,General,General,Haryana,Gurugram,0.08,8
+766,SC,SC,Tamil Nadu,Madurai,0.3,7
+767,OBC,OBC,Bihar,Patna,0.26,14
+768,SC,SC,Chhattisgarh,Raipur,0.39,11
+769,General,General,Uttar Pradesh,Lucknow,0.38,8
+770,ST,ST,Gujarat,Ahmedabad,0.06,13
+771,SC,SC,Arunachal Pradesh,Lower Subansiri,0.21,10
+772,SC,SC,Himachal Pradesh,Kullu,0.18,11
+773,ST,ST,Punjab,Amritsar,0.07,6
+774,General,General,Kerala,Kochi,0.29,8
+775,ST,ST,Gujarat,Surat,0.19,11
+776,General,General,Punjab,Jalandhar,0.28,12
+777,OBC,OBC,Rajasthan,Jodhpur,0.3,11
+778,SC,SC,Assam,Dibrugarh,0.13,8
+779,General,General,Assam,Silchar,0.07,8
+780,SC,SC,Jharkhand,Dhanbad,0.12,6
+781,OBC,OBC,Punjab,Amritsar,0.07,6
+782,OBC,OBC,Punjab,Ludhiana,0.07,14
+783,ST,ST,Kerala,Kochi,0.29,10
+784,OBC,OBC,Nagaland,Mokokchung,0.07,7
+785,General,General,Kerala,Thiruvananthapuram,0.19,10
+786,General,General,Karnataka,Hubballi-Dharwad,0.29,8
+787,OBC,OBC,West Bengal,Darjeeling,0.19,8
+788,SC,SC,Madhya Pradesh,Indore,0.21,11
+789,General,General,Punjab,Jalandhar,0.28,8
+790,ST,ST,Jharkhand,Jamshedpur,0.28,9
+791,General,General,Karnataka,Bengaluru Urban,0.38,8
+792,OBC,OBC,Uttarakhand,Nainital,0.14,10
+793,OBC,OBC,Himachal Pradesh,Shimla,0.37,9
+794,General,General,Himachal Pradesh,Shimla,0.37,14
+795,General,General,Haryana,Gurugram,0.08,10
+796,OBC,OBC,Punjab,Jalandhar,0.28,13
+797,SC,SC,Odisha,Rourkela,0.37,6
+798,General,General,Haryana,Hisar,0.38,7
+799,General,General,Punjab,Amritsar,0.07,6
+800,General,General,Assam,Kamrup,0.22,7
