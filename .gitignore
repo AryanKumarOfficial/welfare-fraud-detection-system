@@ -58,14 +58,13 @@ eggs/
 .ipynb_checkpoints
 
 # ML model artifacts
-*.pkl
+# *.pkl
 *.joblib
 *.h5
 *.onnx
 *.model
 
 # dataset files
-data/
 datasets/
 
 # training outputs

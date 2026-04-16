@@ -5,6 +5,7 @@ from .predict import predict_all
 
 app = FastAPI()
 
+
 class UserData(BaseModel):
     income_in_rs: float
     land_owned_acres: float
@@ -31,6 +32,7 @@ class UserData(BaseModel):
     avg_claim_amount: float
     chronic_disease: int
 
+
 @app.get("/")
 def home():
     return {"message": "Welfare Fraud Detection API is running"}
@@ -38,10 +40,7 @@ def home():
 
 @app.post("/predict")
 def predict(data: UserData):
-    
+
     result = predict_all(data.dict())
-    
-    return {
-        "success": True,
-        "data": result
-    }
+
+    return {"success": True, "data": result}

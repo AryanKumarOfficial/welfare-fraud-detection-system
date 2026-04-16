@@ -1,10 +1,8 @@
-fastapi
-uvicorn
 pandas
 numpy
 scikit-learn
-xgboost
-shap
-psycopg2-binary
-sqlalchemy
-python-dotenv
+matplotlib
+seaborn
+joblib
+fastapi
+uvicorn
