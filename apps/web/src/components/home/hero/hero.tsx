@@ -2,7 +2,6 @@
 
 import { HeroContent } from "./hero-content";
 import { HeroRiskPanel } from "./hero-risk-panel";
-import { HeroStatsStrip } from "./hero-stats-strip";
 
 export function Hero() {
   return (
@@ -16,9 +15,6 @@ export function Hero() {
           <div className="lg:col-span-5">
             <HeroRiskPanel />
           </div>
-        </div>
-        <div className="mt-12">
-          <HeroStatsStrip />
         </div>
       </div>
     </section>
