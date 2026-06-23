@@ -29,6 +29,9 @@ COPY apps ./apps
 COPY packages ./packages
 COPY services ./services
 
+# Copy pnpm config
+COPY .npmrc ./
+
 # Install dependencies
 RUN pnpm install --no-frozen-lockfile
 

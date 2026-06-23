@@ -96,3 +96,5 @@ docker-data/
 
 # Windows
 Thumbs.db
+
+.pnpm-store
