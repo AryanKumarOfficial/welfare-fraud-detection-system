@@ -68,14 +68,18 @@ export default function DashboardPage() {
     return (
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="rounded-3xl border border-destructive/30 bg-destructive/10 p-6 text-sm text-destructive">
-          {error}
+          E {error}
         </div>
       </div>
     );
   }
 
   if (!summary) {
-    return null;
+    return <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="rounded-3xl border border-border bg-muted/50 p-8 text-center">
+        No summary data available.
+      </div>
+    </div>;
   }
 
   return (
