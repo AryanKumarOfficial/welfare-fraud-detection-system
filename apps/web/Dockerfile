@@ -41,22 +41,19 @@ RUN pnpm --filter web build
 # =========================
 # Runtime
 # =========================
+
 FROM node:22-bullseye-slim AS runner
 
 WORKDIR /app
 
 ENV NODE_ENV=production
 ENV PORT=3000
+ENV HOSTNAME=0.0.0.0
 
-RUN corepack enable \
-    && corepack prepare pnpm@11.8.0 --activate
-
-# Copy build output
-COPY --from=builder /app/apps/web/.next ./.next
-COPY --from=builder /app/apps/web/public ./public
-COPY --from=builder /app/apps/web/package.json ./package.json
-COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/apps/web/.next/standalone ./
+COPY --from=builder /app/apps/web/.next/static ./apps/web/.next/static
+COPY --from=builder /app/apps/web/public ./apps/web/public
 
 EXPOSE 3000
 
-CMD ["pnpm", "start"]
+CMD ["node", "apps/web/server.js"]
