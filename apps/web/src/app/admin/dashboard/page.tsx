@@ -8,7 +8,6 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   Activity,
   Database,
@@ -17,8 +16,17 @@ import {
   Layers,
 } from "lucide-react";
 import { getDashboardSummary } from "@/lib/api";
+import type { DashboardSummary } from "@/lib/types";
 
-const statCards = [
+const statCards: {
+  title: string;
+  key: keyof Pick<
+    DashboardSummary,
+    "profiles" | "snapshots" | "predictions" | "high_risk" | "medium_risk"
+  >;
+  icon: React.ElementType;
+  description: string;
+}[] = [
   {
     title: "Beneficiaries",
     key: "profiles",
@@ -56,76 +64,77 @@ export default function DashboardPage() {
 
   if (loading) {
     return (
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-border bg-muted/50 p-8 text-center">
-          Loading dashboard…
-        </div>
+      <div className="flex min-h-[400px] items-center justify-center">
+        <p className="text-sm text-muted-foreground">Loading dashboard…</p>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-destructive/30 bg-destructive/10 p-6 text-sm text-destructive">
-          E {error}
+      <div className="flex min-h-[400px] items-center justify-center">
+        <div className="rounded-2xl border border-destructive/30 bg-destructive/10 px-6 py-4 text-sm text-destructive">
+          {error}
         </div>
       </div>
     );
   }
 
   if (!summary) {
-    return <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-      <div className="rounded-3xl border border-border bg-muted/50 p-8 text-center">
-        No summary data available.
+    return (
+      <div className="flex min-h-[400px] items-center justify-center">
+        <p className="text-sm text-muted-foreground">
+          No summary data available.
+        </p>
       </div>
-    </div>;
+    );
   }
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-      <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">
-            Live Dashboard
-          </p>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            System summary and risk posture
-          </h1>
-          <p className="mt-3 text-base leading-7 text-muted-foreground max-w-2xl">
-            Live backend data for predictions, models, and operational risk
-            indicators.
-          </p>
-        </div>
-        <Badge variant="secondary" className="uppercase tracking-[0.18em]">
+    <div className="space-y-8">
+      <div>
+        <p className="text-sm font-medium text-primary">Live Dashboard</p>
+
+        <h1 className="mt-1 text-3xl font-semibold tracking-tight">
+          System summary and risk posture
+        </h1>
+
+        <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
+          Live backend data for predictions, models, and operational risk
+          indicators.
+        </p>
+
+        <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-border px-3 py-1.5 text-sm">
+          <span className="h-2 w-2 rounded-full bg-emerald-500" />
           Connected to backend
-        </Badge>
+        </div>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
         {statCards.map((card) => {
           const Icon = card.icon;
+
           return (
             <Card key={card.title} className="border border-border">
               <CardHeader className="flex items-start gap-4 px-6 py-5">
                 <div className="rounded-2xl bg-primary/10 p-3 text-primary">
                   <Icon className="h-5 w-5" />
                 </div>
+
                 <div>
                   <CardTitle>{card.title}</CardTitle>
                   <CardDescription>{card.description}</CardDescription>
                 </div>
               </CardHeader>
+
               <CardContent className="px-6 pb-6 pt-0">
-                <p className="text-4xl font-semibold">
-                  {summary[card.key as keyof typeof summary] ?? 0}
-                </p>
+                <p className="text-4xl font-semibold">{summary[card.key]}</p>
               </CardContent>
             </Card>
           );
         })}
 
-        <Card className="lg:col-span-3 border border-border">
+        <Card className="border border-border lg:col-span-3">
           <CardHeader className="px-6 py-5">
             <CardTitle>High risk insights</CardTitle>
             <CardDescription>
@@ -133,32 +142,33 @@ export default function DashboardPage() {
               across the platform.
             </CardDescription>
           </CardHeader>
-          <CardContent className="px-6 pb-6 pt-0">
-            <div className="grid gap-4 md:grid-cols-3">
-              <div className="rounded-3xl border border-border p-5">
-                <p className="text-sm font-medium text-muted-foreground">
-                  High Risk
-                </p>
-                <p className="mt-3 text-3xl font-semibold text-rose-600">
-                  {summary.high_risk}
-                </p>
-              </div>
-              <div className="rounded-3xl border border-border p-5">
-                <p className="text-sm font-medium text-muted-foreground">
-                  Medium Risk
-                </p>
-                <p className="mt-3 text-3xl font-semibold text-amber-600">
-                  {summary.medium_risk}
-                </p>
-              </div>
-              <div className="rounded-3xl border border-border p-5">
-                <p className="text-sm font-medium text-muted-foreground">
-                  Low Risk
-                </p>
-                <p className="mt-3 text-3xl font-semibold text-emerald-600">
-                  {summary.low_risk}
-                </p>
-              </div>
+
+          <CardContent className="grid gap-4 px-6 pb-6 pt-0 md:grid-cols-3">
+            <div className="rounded-3xl border border-border p-5">
+              <p className="text-sm font-medium text-muted-foreground">
+                High Risk
+              </p>
+              <p className="mt-3 text-3xl font-semibold text-rose-600">
+                {summary.high_risk}
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-border p-5">
+              <p className="text-sm font-medium text-muted-foreground">
+                Medium Risk
+              </p>
+              <p className="mt-3 text-3xl font-semibold text-amber-600">
+                {summary.medium_risk}
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-border p-5">
+              <p className="text-sm font-medium text-muted-foreground">
+                Low Risk
+              </p>
+              <p className="mt-3 text-3xl font-semibold text-emerald-600">
+                {summary.low_risk}
+              </p>
             </div>
           </CardContent>
         </Card>
