@@ -6,6 +6,7 @@ from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 from sqlalchemy import text
 from pydantic import BaseModel, Field
+from fastapi.middleware.cors import CORSMiddleware
 
 from src.db.session import close_db, get_db_session, get_engine
 from src.exceptions import (
@@ -54,6 +55,14 @@ app = FastAPI(
     title="Welfare Fraud Detection API",
     description="AI-powered welfare fraud detection service with prediction lifecycle, analytics, and model governance.",
     version="1.0.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
 )
 
 app.middleware("http")(log_request)
