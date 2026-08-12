@@ -80,6 +80,8 @@ services:
         condition: service_completed_successfully
       csv-importer:
         condition: service_completed_successfully
+    # Run seeder at container start to ensure .env is populated, then start uvicorn
+    command: sh -c "python3 scripts/seed-demo-admin.py --username \"$ADMIN_USERNAME\" --password \"$ADMIN_PASSWORD\" || true && uvicorn src.app:app --host 0.0.0.0 --port 8000"
 
   prediction-queue:
     build:

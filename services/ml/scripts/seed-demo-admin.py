@@ -9,7 +9,6 @@ import argparse
 import os
 import secrets
 from pathlib import Path
-import importlib.util
 import sys
 
 
@@ -108,7 +107,6 @@ def main():
     # can load environment either from repo root (working dir) or service dir.
     env_path = repo_root / "services" / "ml" / ".env"
     repo_env_path = repo_root / ".env"
-    security_py = repo_root / "services" / "ml" / "src" / "security.py"
 
     jwt_secret = secrets.token_urlsafe(32)
 
@@ -131,8 +129,6 @@ def main():
     os.environ.setdefault("OPERATOR_USERNAME", "operator")
     os.environ.setdefault("OPERATOR_PASSWORD", "operator")
 
-    # We avoid importing the service code (FastAPI may not be installed in this environment).
-    # Re-implement the minimal credential + token logic locally to validate the pipeline.
     try:
         admin_u = os.environ.get("ADMIN_USERNAME")
         admin_p = os.environ.get("ADMIN_PASSWORD")
